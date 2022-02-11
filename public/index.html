@@ -3,17 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./main.css">
     <!-- <link rel="stylesheet" href="./index.css"> -->
 </head>
+<script>
+    function toggle() {
+        var x = document.getElementById("mobile-links");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
 
 <body>
     <div class="container">
         <div class="container1">
             <div class="logo">
                 <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 62 62"><circle cx="31" cy="31" r="31" fill="#EEEBFF"/><path fill="#7B61FF" d="m26.1133 38.4688-5.1224-2.9574 8.7273-15.116 5.2257 3.017c1.5008.8665 2.6153 1.9134 3.3434 3.1408.736 1.2253 1.069 2.569.999 4.031-.0699 1.4621-.558 2.9779-1.4642 4.5476-.9091 1.5746-1.9832 2.7587-3.2221 3.5524-1.2341.7965-2.5744 1.1806-4.0212 1.1523-1.4418-.0254-2.9303-.4813-4.4655-1.3677Zm-1.0161-3.7457 2.2511 1.2997c1.053.608 2.0422.9232 2.9674.9456.9281.0176 1.7908-.2552 2.5883-.8183.8003-.568 1.5343-1.4301 2.2019-2.5865.6676-1.1563 1.0444-2.2181 1.1305-3.1853.0889-.9722-.1042-1.848-.5792-2.6275-.4673-.7815-1.2127-1.4677-2.2362-2.0586l-2.3324-1.3466-5.9914 10.3775Z"/></svg>
+            </div>
+            <div>
+                <svg class="nav__toggle" onclick="toggle()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
             </div>
             <div class="nav">
                 <a href="#" class="box1">Service</a>
@@ -23,15 +39,14 @@
                     <button class="btn"><a href="#" class="mark">Hire me</a></button>
                 </a>
             </div>
-            <nav class="nav-mobile">
-                <a href="#" class="box1">Service</a>
-                <a href="#" class="box2">Works</a>
-                <a href="#" class="box3">Blogs</a>
-                <a href="">
-                    <button class="btn">Hire me</button>
-                </a>
-            </nav>
         </div>
+        <nav class="nav-mobile" id="mobile-links">
+            <a href="#" class="box1">Service</a>
+            <a href="#" class="box1">Works</a>
+            <a href="#" class="box1">Blogs</a>
+
+
+        </nav>
         <div class=hero-section>
             <div class="row lol">
                 <div class="left">
@@ -288,7 +303,7 @@
             <a href="#"><img src="./images/Vector.png" alt=""></a>
             <a href="#"><img src="./images/instagram 1.png" alt=""></a>
 
-
+            <!-- <script src="./js/main.js"></script> -->
         </div>
     </div>
 </footer>
